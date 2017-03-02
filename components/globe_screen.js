@@ -107,8 +107,8 @@ export default function (props, ref, key) {
                         <h3>Where do Sea Turtles<br />go to nest?</h3>
                         <Selectable
                             list={[
-                                <skoash.ListItem><h4>Up a tree</h4></skoash.ListItem>,
-                                <skoash.ListItem><h4>To a terrarium</h4></skoash.ListItem>,
+                                <skoash.ListItem complete><h4>Up a tree</h4></skoash.ListItem>,
+                                <skoash.ListItem complete><h4>To a terrarium</h4></skoash.ListItem>,
                                 <skoash.ListItem correct><h4>To their place of birth</h4></skoash.ListItem>,
                             ]}
                             selectRespond={_.bind(selectRespond, undefined, _, '2')}
@@ -118,9 +118,9 @@ export default function (props, ref, key) {
                         <h3>How many Sea Turtles<br />make it to adulthood?</h3>
                         <Selectable
                           list={[
-                              <skoash.ListItem><h4>1 in 100</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>1 in 100</h4></skoash.ListItem>,
                               <skoash.ListItem correct><h4>1 in 1,000</h4></skoash.ListItem>,
-                              <skoash.ListItem><h4>Most of them</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>Most of them</h4></skoash.ListItem>,
                           ]}
                           selectRespond={_.bind(selectRespond, undefined, _, '1')}
                         />
@@ -129,9 +129,11 @@ export default function (props, ref, key) {
                         <h3>Can Sea Turtles pull their head and flippers into their shells?</h3>
                         <Selectable
                           list={[
-                              <skoash.ListItem><h4>Yes</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>Yes</h4></skoash.ListItem>,
                               <skoash.ListItem correct><h4>No</h4></skoash.ListItem>,
-                              <skoash.ListItem><h4>It depends on how scared they are</h4></skoash.ListItem>,
+                              <skoash.ListItem complete>
+                                  <h4>It depends on how scared they are</h4>
+                              </skoash.ListItem>,
                           ]}
                           selectRespond={_.bind(selectRespond, undefined, _, '1')}
                         />
@@ -140,8 +142,8 @@ export default function (props, ref, key) {
                         <h3>What kind of Sea Turtle<br />can dive to 1,000 feet</h3>
                         <Selectable
                           list={[
-                              <skoash.ListItem><h4>Green</h4></skoash.ListItem>,
-                              <skoash.ListItem><h4>Hawksbill</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>Green</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>Hawksbill</h4></skoash.ListItem>,
                               <skoash.ListItem correct><h4>Leatherbacks</h4></skoash.ListItem>,
                           ]}
                           selectRespond={_.bind(selectRespond, undefined, _, '2')}
@@ -152,8 +154,8 @@ export default function (props, ref, key) {
                         <Selectable
                           list={[
                               <skoash.ListItem correct><h4>5 hours</h4></skoash.ListItem>,
-                              <skoash.ListItem><h4>35 minutes</h4></skoash.ListItem>,
-                              <skoash.ListItem>
+                              <skoash.ListItem complete><h4>35 minutes</h4></skoash.ListItem>,
+                              <skoash.ListItem complete>
                                   <h4>
                                       Long enough to sing the score of La Traviata
                                   </h4>
@@ -167,12 +169,12 @@ export default function (props, ref, key) {
                         <Selectable
                           list={[
                               <skoash.ListItem correct><h4>From their food</h4></skoash.ListItem>,
-                              <skoash.ListItem>
+                              <skoash.ListItem complete>
                                   <h4>
                                       From fresh water springs on the ocean floor
                                   </h4>
                               </skoash.ListItem>,
-                              <skoash.ListItem><h4>From a nearby tap</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>From a nearby tap</h4></skoash.ListItem>,
                           ]}
                           selectRespond={_.bind(selectRespond, undefined, _, '0')}
                         />
@@ -181,9 +183,11 @@ export default function (props, ref, key) {
                         <h3>If a Sea Turtle looks like he’s crying, what’s really happening?</h3>
                         <Selectable
                           list={[
-                              <skoash.ListItem><h4>Found out he didn’t make the team</h4></skoash.ListItem>,
+                              <skoash.ListItem complete>
+                                  <h4>Found out he didn’t make the team</h4>
+                              </skoash.ListItem>,
                               <skoash.ListItem correct><h4>Shedding excess salt</h4></skoash.ListItem>,
-                              <skoash.ListItem>
+                              <skoash.ListItem complete>
                                   <h4>
                                       Just saw Selena Gomez and is overwhelmed with emotion
                                   </h4>
@@ -196,9 +200,9 @@ export default function (props, ref, key) {
                         <h3>How many years have Sea Turtles been on earth?</h3>
                         <Selectable
                           list={[
-                              <skoash.ListItem><h4>100,000 years</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>100,000 years</h4></skoash.ListItem>,
                               <skoash.ListItem correct><h4>Over 150 Million years</h4></skoash.ListItem>,
-                              <skoash.ListItem><h4>Since Tuesday</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>Since Tuesday</h4></skoash.ListItem>,
                           ]}
                           selectRespond={_.bind(selectRespond, undefined, _, '1')}
                         />
@@ -207,9 +211,9 @@ export default function (props, ref, key) {
                         <h3>What one ocean<br />does NOT have Sea Turtles?</h3>
                         <Selectable
                           list={[
-                              <skoash.ListItem><h4>Mediterranean</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>Mediterranean</h4></skoash.ListItem>,
                               <skoash.ListItem correct><h4>Arctic Ocean</h4></skoash.ListItem>,
-                              <skoash.ListItem><h4>The Caspian Sea</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>The Caspian Sea</h4></skoash.ListItem>,
                           ]}
                           selectRespond={_.bind(selectRespond, undefined, _, '1')}
                         />
@@ -218,9 +222,9 @@ export default function (props, ref, key) {
                         <h3>Why do Sea Turtles<br />come onto land?</h3>
                         <Selectable
                           list={[
-                              <skoash.ListItem><h4>To get some sun</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>To get some sun</h4></skoash.ListItem>,
                               <skoash.ListItem correct><h4>To lay eggs</h4></skoash.ListItem>,
-                              <skoash.ListItem><h4>Circus work</h4></skoash.ListItem>,
+                              <skoash.ListItem complete><h4>Circus work</h4></skoash.ListItem>,
                           ]}
                           selectRespond={_.bind(selectRespond, undefined, _, '1')}
                         />
