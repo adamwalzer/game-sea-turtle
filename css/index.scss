@@ -1,31 +1,11 @@
 @import 'variables';
+@import '../../shared/css/mixins/import';
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-}
+@include bootstrap-game;
 
 html {
     background: url('#{$image}background.png') bottom center no-repeat;
     background-size: cover;
-    cursor: default;
-    // the autoprefixer doesn't add these automatically
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 20px;
-    user-select: none;
-    -moz-user-drag: none;
-    -webkit-user-drag: none;
-    user-drag: none;
-}
-
-body > div > div {
-    position: relative;
-    margin: auto;
-    width: 960px;
-    height: 540px;
 }
 
 [pl-action] {

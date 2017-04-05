@@ -1,5 +1,4 @@
-const src = 'https://res.cloudinary.com/changemyworldnow/video/upload/af_44100/' +
-    'v1455037044/sea-turtle-vid_2.1_ovvtfq.mp4';
+const src = `${CMWN.MEDIA.VIDEO}sea-turtle.mp4`;
 
 export default function (props, ref, key) {
     return (
